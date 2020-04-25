@@ -5,8 +5,11 @@ import { Routes } from './routes';
 
 export function App() {
   return (
-    <HashRouter basename='/'>
-      <Routes />
-    </HashRouter>
+    <>
+      <div>deploy test</div>
+      <HashRouter basename='/'>
+        <Routes />
+      </HashRouter>
+    </>
   );
 }

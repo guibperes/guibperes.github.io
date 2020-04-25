@@ -1,11 +1,14 @@
 {
   "name": "my-blog",
   "version": "0.1.0",
+  "homepage": "guibperes.github.io/my-blog",
   "scripts": {
     "start": "react-scripts start",
     "build:react": "react-scripts build",
     "build:parser": "node src/parser.js",
-    "build": "npm run build:parser && npm run build:react"
+    "build": "npm run build:parser && npm run build:react",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "dependencies": {
     "react": "^16.13.1",
@@ -23,6 +26,7 @@
     "eslint-plugin-prettier": "^3.1.3",
     "eslint-plugin-react": "^7.19.0",
     "eslint-plugin-react-hooks": "^2.5.1",
+    "gh-pages": "^2.2.0",
     "prettier": "^2.0.4",
     "react-scripts": "^3.4.1"
   },

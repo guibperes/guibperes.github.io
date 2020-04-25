@@ -6,7 +6,7 @@ const converter = new showdown.Converter();
 
 const posts = fs.readdirSync(resolve(__dirname, 'posts'));
 
-const result = posts.map((post) => {
+const result = posts.map((post, index) => {
   const dataBuffer = fs.readFileSync(
     resolve(__dirname, 'posts', post, 'data.json'),
   );
@@ -21,7 +21,7 @@ const result = posts.map((post) => {
     .split('\n')
     .join('');
 
-  return { ...data, content: contentHTML };
+  return { id: index + 1, ...data, content: contentHTML };
 });
 
 fs.writeFileSync(resolve(__dirname, 'data.json'), JSON.stringify(result));

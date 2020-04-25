@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa&display=swap');
 
 * {
   margin: 0;
@@ -19,7 +20,6 @@ body, input, button {
 #root {
   max-width: 1020px;
   margin: 0 auto;
-  padding: 0 20px 50px;
 }
 
 button {

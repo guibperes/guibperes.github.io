@@ -1,7 +1,8 @@
 import React from 'react';
 
+import { Page } from '../../components';
 // import { Container } from './styles';
 
 export function NotFound() {
-  return <div>404 Not Found</div>;
+  return <Page>404 Not Found</Page>;
 }

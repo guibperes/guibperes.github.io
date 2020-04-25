@@ -8,7 +8,7 @@ export function Routes() {
     <Switch>
       <Route path='/' exact component={Home} />
       <Route path='/:postId/:postName' component={Post} />
-      <Route path='/:postId/:postName' component={NotFound} />
+      <Route path='*' component={NotFound} />
     </Switch>
   );
 }

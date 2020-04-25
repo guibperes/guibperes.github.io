@@ -2,11 +2,12 @@ import React from 'react';
 import ReactHtmlParser from 'react-html-parser';
 
 import posts from '../../data.json';
+import { Page } from '../../components';
 // import { Container } from './styles';
 
 export function Home() {
   return (
-    <div>
+    <Page>
       {posts.map((post) => (
         <article>
           <h3>{post.title}</h3>
@@ -15,6 +16,6 @@ export function Home() {
           <br />
         </article>
       ))}
-    </div>
+    </Page>
   );
 }

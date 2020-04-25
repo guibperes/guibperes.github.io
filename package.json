@@ -8,7 +8,7 @@
     "build:parser": "node src/parser.js",
     "build": "npm run build:parser && npm run build:react",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "deploy": "node deploy.js"
   },
   "dependencies": {
     "react": "^16.13.1",

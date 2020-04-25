@@ -1,8 +1,12 @@
 import React from 'react';
 
-import { Page } from '../../components';
-// import { Container } from './styles';
+import { gifs } from '../../assets';
+import { Container, Gif } from './styles';
 
 export function NotFound() {
-  return <Page>404 Not Found</Page>;
+  return (
+    <Container>
+      <Gif src={gifs.NOT_FOUND} alt='404 Not Found' />
+    </Container>
+  );
 }

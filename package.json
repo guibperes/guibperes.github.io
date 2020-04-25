@@ -4,12 +4,14 @@
   "scripts": {
     "start": "react-scripts start",
     "build:react": "react-scripts build",
-    "build:parser": "node src/parser.js"
+    "build:parser": "node src/parser.js",
+    "build": "npm run build:parser && npm run build:react"
   },
   "dependencies": {
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-html-parser": "^2.0.2",
+    "react-router-dom": "^5.1.2",
     "showdown": "^1.9.1"
   },
   "devDependencies": {

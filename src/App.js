@@ -1,19 +1,12 @@
 import React from 'react';
-import ReactHtmlParser from 'react-html-parser';
+import { BrowserRouter } from 'react-router-dom';
 
-import posts from './data.json';
+import { Routes } from './routes';
 
 export function App() {
   return (
-    <div className='App'>
-      {posts.map((post) => (
-        <article>
-          <h3>{post.title}</h3>
-          <p>Created At {post.createdAt}</p>
-          <div>{ReactHtmlParser(post.content)}</div>
-          <br />
-        </article>
-      ))}
-    </div>
+    <BrowserRouter>
+      <Routes />
+    </BrowserRouter>
   );
 }

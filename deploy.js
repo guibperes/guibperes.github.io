@@ -1,3 +1,4 @@
+/* eslint-disable no-console */
 const ghpages = require('gh-pages');
 
 const { GH_TOKEN } = process.env;
@@ -9,7 +10,7 @@ ghpages.publish(
   },
   (err) => {
     if (err) {
-      throw err;
+      console.log(err);
     }
   },
 );

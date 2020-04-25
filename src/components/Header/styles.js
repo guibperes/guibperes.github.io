@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
 
-export const Container = styled.div`
+export const Container = styled.header`
   height: 72px;
   display: flex;
   align-items: center;

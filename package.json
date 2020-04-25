@@ -5,7 +5,7 @@
   "scripts": {
     "start": "react-scripts start",
     "build:react": "react-scripts build",
-    "build:parser": "node src/parser.js",
+    "build:parser": "node parser.js",
     "build": "npm run build:parser && npm run build:react",
     "predeploy": "npm run build",
     "deploy": "node deploy.js"

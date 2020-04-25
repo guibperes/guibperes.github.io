@@ -6,22 +6,24 @@ const converter = new showdown.Converter();
 
 const posts = fs.readdirSync(resolve(__dirname, 'posts'));
 
-const result = posts.map((post, index) => {
-  const dataBuffer = fs.readFileSync(
-    resolve(__dirname, 'posts', post, 'data.json'),
-  );
+const result = posts
+  .map((post, index) => {
+    const dataBuffer = fs.readFileSync(
+      resolve(__dirname, 'posts', post, 'data.json'),
+    );
 
-  const contentBuffer = fs.readFileSync(
-    resolve(__dirname, 'posts', post, 'content.md'),
-  );
+    const contentBuffer = fs.readFileSync(
+      resolve(__dirname, 'posts', post, 'content.md'),
+    );
 
-  const data = JSON.parse(dataBuffer);
-  const contentHTML = converter
-    .makeHtml(contentBuffer.toString())
-    .split('\n')
-    .join('');
+    const data = JSON.parse(dataBuffer);
+    const contentHTML = converter
+      .makeHtml(contentBuffer.toString())
+      .split('\n')
+      .join('');
 
-  return { id: index + 1, ...data, content: contentHTML };
-});
+    return { id: index + 1, ...data, content: contentHTML };
+  })
+  .sort((a, b) => new Date(b.createdAt) - new Date(a.createdAt));
 
 fs.writeFileSync(resolve(__dirname, 'data.json'), JSON.stringify(result));

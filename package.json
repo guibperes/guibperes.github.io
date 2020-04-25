@@ -11,6 +11,7 @@
     "deploy": "node deploy.js"
   },
   "dependencies": {
+    "date-fns": "^2.12.0",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-html-parser": "^2.0.2",

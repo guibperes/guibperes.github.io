@@ -7,10 +7,10 @@
 - [DONE] Render the parsed HTML on blog Layout
 
 - [DOING] Layout Top and Minimal Design
-  - [DOING] Header
+  - [DONE] Header
   - [TODO] Home Page
   - [TODO] Post Page
-  - [TODO] Not Found Page
+  - [DOING] Not Found Page
 
 - [DONE] GitHub Pages Deploy
   - [DONE] Manual Deploy

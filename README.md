@@ -8,9 +8,9 @@
 
 - [DOING] Layout Top and Minimal Design
   - [DONE] Header
-  - [TODO] Home Page
+  - [DOING] Home Page
   - [TODO] Post Page
-  - [DOING] Not Found Page
+  - [DONE] Not Found Page
 
 - [DONE] GitHub Pages Deploy
   - [DONE] Manual Deploy

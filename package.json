@@ -1,7 +1,7 @@
 {
   "name": "my-blog",
   "version": "0.1.0",
-  "homepage": "guibperes.github.io/my-blog",
+  "homepage": "https://guibperes.github.io/my-blog/",
   "scripts": {
     "start": "react-scripts start",
     "build:react": "react-scripts build",

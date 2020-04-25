@@ -12,6 +12,6 @@
   - [TODO] Post Page
   - [TODO] Not Found Page
 
-- [TODO] GitHub Pages Deploy
-  - [TODO] Manual Deploy
-  - [TODO] Github Actions Deploy
+- [DOING] GitHub Pages Deploy
+  - [DONE] Manual Deploy
+  - [DOING] Github Actions Deploy

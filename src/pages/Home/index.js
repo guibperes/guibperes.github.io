@@ -3,6 +3,7 @@ import { useHistory } from 'react-router-dom';
 import { format } from 'date-fns';
 
 import posts from '../../data.json';
+import { MetaTags } from '../../components';
 import {
   Container,
   PostContainer,
@@ -22,6 +23,7 @@ export function Home() {
 
   return (
     <Container>
+      <MetaTags title='guibperes - My Blog' description='Meu blog pessoal!!!' />
       {posts.map((post) => (
         <PostContainer onClick={() => handlePostClick(post)}>
           <PostHeader>

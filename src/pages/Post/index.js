@@ -5,6 +5,7 @@ import { format } from 'date-fns';
 import { ptBR } from 'date-fns/locale';
 
 import posts from '../../data.json';
+import { MetaTags } from '../../components';
 import { Container, PostTitle, PostDate, PostContent } from './styles';
 
 export function Post() {
@@ -15,6 +16,10 @@ export function Post() {
     <>
       {post ? (
         <Container>
+          <MetaTags
+            title={`guibperes - ${post.title}`}
+            description={post.description}
+          />
           <PostTitle>{post.title}</PostTitle>
           <PostDate>
             {format(new Date(post.createdAt), `dd 'de' MMMM 'de' yyyy`, {

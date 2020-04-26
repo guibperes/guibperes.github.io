@@ -20,14 +20,12 @@ export const PostHeader = styled.div`
 `;
 
 export const PostContent = styled.p`
-  font-family: 'Comfortaa', cursive;
   font-size: 14px;
   padding: 10px;
   padding-top: 20px;
 `;
 
 export const PostTitle = styled.a`
-  font-family: 'Comfortaa', cursive;
   text-decoration: none;
   color: #000;
   font-weight: 600;

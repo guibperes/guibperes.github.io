@@ -16,5 +16,4 @@ export const Logo = styled(Link)`
   text-decoration: none;
   font-size: 32px;
   font-weight: 300;
-  font-family: 'Comfortaa', cursive;
 `;

@@ -1,4 +1,3 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa&display=swap');
 
 * {
@@ -14,7 +13,7 @@ body {
 }
 
 body, input, button {
-  font: 16px Roboto, sans-serif;
+  font: 16px 'Comfortaa', cursive;
 }
 
 #root {

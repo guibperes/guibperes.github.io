@@ -1,5 +1,4 @@
 import styled from 'styled-components';
-import { Link } from 'react-router-dom';
 
 import { Page } from '../../components';
 
@@ -12,6 +11,7 @@ export const PostContainer = styled.article`
   border: 1px solid #000;
   border-radius: 5px;
   margin-bottom: 10px;
+  cursor: pointer;
 `;
 
 export const PostHeader = styled.div`
@@ -26,7 +26,7 @@ export const PostContent = styled.p`
   padding-top: 20px;
 `;
 
-export const PostTitle = styled(Link)`
+export const PostTitle = styled.a`
   font-family: 'Comfortaa', cursive;
   text-decoration: none;
   color: #000;

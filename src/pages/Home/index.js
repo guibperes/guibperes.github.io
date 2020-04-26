@@ -1,4 +1,5 @@
 import React from 'react';
+import { useHistory } from 'react-router-dom';
 import { format } from 'date-fns';
 
 import posts from '../../data.json';
@@ -13,14 +14,18 @@ import {
 } from './styles';
 
 export function Home() {
+  const history = useHistory();
+
+  function handlePostClick(post) {
+    history.push(`/${post.id}/${post.title.toLowerCase().replace(/ /g, '-')}`);
+  }
+
   return (
     <Container>
       {posts.map((post) => (
-        <PostContainer>
+        <PostContainer onClick={() => handlePostClick(post)}>
           <PostHeader>
-            <PostTitle
-              to={`/${post.id}/${post.title.toLowerCase().replace(/ /g, '-')}`}
-            >
+            <PostTitle>
               {post.title}
               <PostDate>
                 {format(new Date(post.createdAt), 'dd/MM/yyyy')}

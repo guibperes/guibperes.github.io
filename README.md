@@ -8,8 +8,8 @@
 
 - [DOING] Layout Top and Minimal Design
   - [DONE] Header
-  - [DOING] Home Page
-  - [TODO] Post Page
+  - [DONE] Home Page
+  - [DOING] Post Page
   - [DONE] Not Found Page
 
 - [DONE] GitHub Pages Deploy

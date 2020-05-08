@@ -15,7 +15,7 @@ jobs:
 
     steps:
     - name: Checkout repository
-    - uses: actions/checkout@v2
+      uses: actions/checkout@v2
 
     - name: Set up Node
       uses: actions/setup-node@v1
@@ -23,7 +23,7 @@ jobs:
         node-version: 12
 
     - name: Install dependencies
-    - run: npm ci
+      run: npm ci
 
     - name: Deploy
-    - run: npm run deploy
+      run: npm run deploy
